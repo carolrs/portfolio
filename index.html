@@ -50,14 +50,27 @@
           <h2>Ana Carolina Rodrigues</h2>
           <!-- Move the contactDetails here for better layout -->
           <pre>
-            <code>
-const contactDetails = {
-  'email': 'anacarolinarodriguesoares@gmail.com',
-  'address': 'London, UK'
-};
-console.log(contactDetails);
+    <code id="typing-effect">
             </code>
           </pre>
+          <script>
+            var i = 0;
+            var txt = `const contactDetails = {
+              'email': 'anacarolinarodriguesoares@gmail.com',
+              'address': 'London, UK'
+            };
+            console.log(contactDetails);`;
+            var speed = 50;
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("typing-effect").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            typeWriter();
+          </script>
+
           <div class="social-media">
             <a href="https://github.com/carolrs" target="_blank">
               <img src="images/GitHub-Mark.png" alt="GitHub" style="width:100px;height:100px;">
@@ -73,7 +86,7 @@ console.log(contactDetails);
   <section id="about">
     <div class="content">
       <div class="card-intro">
-        <h1>Hello! <img src="images/robot.webp" alt="Robot Icon" class="icon"></h1>
+        <h1>Hello! <img src="images/robot.webp" alt="Robot Icon" class="icon jumping-robot"></h1>
         <p> I'm Ana, currently residing in the heart of London and making strides in the world of software development.
           A deep-rooted passion for technology and coding has led me down this rewarding path. My commitment to
           self-improvement and tenacity has seen me transform a long-standing aspiration into a vibrant reality.</p>
@@ -129,6 +142,8 @@ console.log(contactDetails);
       <h1>Latest Pro<span class="colored-text">je</span>cts</h1>
       <div class="project-card">
         <a href="https://github.com/carolrs/acebook-mern-water-team" target="_blank">
+          <img src="images/GitHub-Mark.png" alt="GitHub" class="github-icon">
+
           <div class="project-info">
             <h2>Farcebook</h2>
             <p>Farcebook is an engaging, interactive platform where creativity and expression come to life. It's a
@@ -148,6 +163,8 @@ console.log(contactDetails);
       </div>
       <div class="project-card">
         <a href="https://github.com/carolrs/study-buddy" target="_blank">
+          <img src="images/GitHub-Mark.png" alt="GitHub" class="github-icon">
+
           <div class="project-info">
             <h2>Study Buddy</h2>
             <p>Study Buddy is an innovative collaborative learning platform designed to help students form and join
@@ -168,6 +185,8 @@ console.log(contactDetails);
       </div>
       <div class="project-card">
         <a href="https://github.com/carolrs/despachante-mailer" target="_blank">
+          <img src="images/GitHub-Mark.png" alt="GitHub" class="github-icon">
+
           <div class="project-info">
             <h2>Despacho Policial</h2>
             <p>"4 de Abril Despachante" is a space where it offers services for issuing Identity Cards and Driver's

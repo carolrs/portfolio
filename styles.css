@@ -91,6 +91,8 @@ pre {
 h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
+  letter-spacing: 1.2px;
+  font-family: 'Roboto', sans-serif;  
 }
 
 p {
@@ -214,6 +216,7 @@ nav li a {
 @media (min-width: 500px) {
 	.content, .custom {
 		width: 40%;
+    grid-template-columns: 1fr 1fr;
 	}
 	.box-right .content {
 		order: 1;
@@ -258,6 +261,13 @@ nav li a {
   margin: 0;
   color: #333;
 }
+.github-icon {
+  width: 30px;    /* adjust as needed */
+  height: 30px;   /* adjust as needed */
+  position: absolute;
+  top: 10px;      /* adjust as needed */
+  left: 10px;     /* adjust as needed */
+}
 
 
 .project-card {
@@ -276,8 +286,14 @@ nav li a {
   margin-left: 10px;
   float: right;
   border-radius: 1px;
-
+  display: block;
+  vertical-align: middle; 
+  grid-template-columns: 1fr 1fr;
 } 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
 
 .project-info {
   /* flex: 1 1 auto;  Adicionado */
@@ -300,3 +316,13 @@ nav li a {
   border-radius: 10px;
   background-color: #3a4c84; /* make the buttons round */
 }
+@keyframes jump {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.jumping-robot {
+  animation: jump 1s infinite;
+}
+
