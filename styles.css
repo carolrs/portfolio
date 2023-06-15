@@ -264,9 +264,9 @@ nav li a {
 .github-icon {
   width: 30px;    /* adjust as needed */
   height: 30px;   /* adjust as needed */
-  position: absolute;
   top: 10px;      /* adjust as needed */
   left: 10px;     /* adjust as needed */
+  float:left;
 }
 
 
