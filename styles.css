@@ -1,0 +1,302 @@
+* {
+	box-sizing: border-box;
+}
+ body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+} 
+
+ section {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a5a5a;
+  text-align: center;
+} 
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column; /* stacked content */
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  max-width: 600px;
+}
+
+
+.align-left {
+  text-align: left;
+}
+
+.content {
+  max-width: 600px;
+}
+
+#intro {
+
+  opacity: 0.8;
+  
+}
+
+#about {
+  background: #F1FAEE; /* Change the color according to your preference */
+  color: #1D3557;
+
+}
+.icon {
+  height: 90px; /* adjust as needed */
+  width: 90px; /* adjust as needed */
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;}
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    overflow: auto;
+    font-size: .875em;
+    text-align: left;
+}
+
+#experience {
+  background: #A8DADC; /* Change the color according to your preference */
+  color: #1D3557;
+}
+
+#projects {
+  background: #c2cbde; /* Change the color according to your preference */
+}
+
+#contact {
+  background: #bbc7b6; /* Change the color according to your preference */
+}
+.colored-text {
+  color: #7a0278;  /* Substitua '#ff0000' pela cor que você deseja. */
+}
+
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+ .card {
+  padding: 20px;
+}
+
+/* .card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}  */
+
+img {
+  width: 300px;
+  height: 300px; 
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  color: #b9b9dc;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  margin-right: 20px;
+}
+nav li a {
+  display: block;
+  color: #bdbdce(247, 247, 247);
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #121313;
+}
+nav li a {
+  color: #7a0278;
+}
+
+.logo {
+  margin: 10px
+}
+
+.logo img {
+  width: 54px;
+  height: auto;
+  float: right;
+}
+.container {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 200px;
+	margin: 0 auto;
+}
+.single-box {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	width: 100%;
+}
+.date-area {
+	display: flex;
+	background: linear-gradient(to right, #597db0 45%, #000 45%, #000 45%, #597db0 50%);
+	order: 2;
+	text-align: center;
+	color: #fff;
+	font-size: 28px;
+	flex-basis: 100px;
+}
+.date-area > span {
+	font-size: 10px;
+	line-height: 50px; /* Adjusted from 70px to 50px */
+	margin: auto;
+	background: #14b6c1;
+	width: 50px; /* Adjusted from 70px to 50px */
+	height: 50px; /* Adjusted from 70px to 50px */
+	border-radius: 50%;
+}
+.content {
+	text-align: center;
+	padding: 20px;
+	border-radius: 25px;
+	color: #0c0c0c;
+	order: 3;
+	width: 80%;
+	padding-left: 10px;
+}
+.content {
+	margin-bottom: 3%;
+}
+.content h2 {
+	margin: 0;
+	font-size: 12px;
+	text-transform: uppercase;
+  font-weight: bold;
+}
+.content h3 {
+	margin: 5px;
+	font-size: 0px;
+	color: #000;
+}
+@media (min-width: 500px) {
+	.content, .custom {
+		width: 40%;
+	}
+	.box-right .content {
+		order: 1;
+		padding-right: 20px;
+		border-radius: 25px;
+	}
+	.box-right .custom {
+		order: 3;
+	}
+}
+.project-card { 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  width: 690px;
+  box-shadow: 0px 30px 100px -10px rgba(50, 49, 49, 0.4);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info h2 {
+  margin: 0 0 10px 0;
+}
+
+.project-info p {
+  margin: 0;
+  color: #333;
+}
+
+
+.project-card {
+  display: flex;
+  justify-content: space-between; /* Distributes the content (image and info) evenly */
+  border: 0px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  height: 310px;
+}
+
+.project-image img {
+  height: 320px;
+  margin-left: 10px;
+  float: right;
+  border-radius: 1px;
+
+} 
+
+.project-info {
+  /* flex: 1 1 auto;  Adicionado */
+  display: flex;
+  flex-direction: column; /* stack the title, description and tech buttons vertically */
+  flex-grow: 1; /* Makes the project-info div take up the rest of the space */
+}
+
+.tech-buttons {
+  display: flex;
+  gap: 10px;
+  color: #edeef0;
+}
+
+.tech-buttons span {
+  padding: 10px 10px; /* space inside the buttons */
+  margin: auto;
+  margin-right: 1%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #3a4c84; /* make the buttons round */
+}
